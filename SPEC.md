@@ -242,6 +242,24 @@ Start with:
 
 ---
 
+## Visualization
+
+### Goal
+
+Enable developers to explore the codebase graph and its DAG projections (SCC-collapsed) to identify optimization opportunities and verify planning logic.
+
+### Requirements
+
+- Export graph to common formats (DOT/Graphviz, Mermaid, JSON).
+- Interactive visualization (optional for v1 CLI, but supported via exported formats).
+- View modes:
+  - Full codebase graph.
+  - Subgraph around a seed node.
+  - Collapsed DAG (SCCs as super-nodes).
+  - Execution plan sequence.
+
+---
+
 ## Extensibility
 
 Future additions:

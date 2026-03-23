@@ -2,8 +2,8 @@
 
 ## Phase 0: Project Setup
 
-- [ ] Create project structure
-- [ ] Define core packages/modules:
+- [x] Create project structure
+- [x] Define core packages/modules:
   - graph
   - parser
   - indexer
@@ -14,12 +14,12 @@
 
 ## Phase 1: File Discovery
 
-- [ ] Implement recursive file scanner
-- [ ] Add ignore rules:
+- [x] Implement recursive file scanner
+- [x] Add ignore rules:
   - .git
   - node_modules
   - dist/build dirs
-- [ ] Detect language by extension
+- [x] Detect language by extension
 
 ---
 
@@ -27,17 +27,14 @@
 
 For each supported language:
 
-- [ ] Extract imports
-- [ ] Extract top-level symbols
-- [ ] Record file metadata
+- [x] Extract imports
+- [x] Extract top-level symbols
+- [x] Record file metadata
 
 Start with:
-- Go
-- TypeScript/JavaScript
-- Python
-
-Fallback:
-- Regex-based parsing is acceptable for v1
+- [x] Go
+- [x] TypeScript/JavaScript
+- [x] Python
 
 ---
 
@@ -45,47 +42,47 @@ Fallback:
 
 ### Data Structures
 
-- [ ] Define Node struct
-- [ ] Define Edge struct
-- [ ] Define Graph struct
+- [x] Define Node struct
+- [x] Define Edge struct
+- [x] Define Graph struct
 
 Graph must support:
-- [ ] Add node
-- [ ] Add edge
-- [ ] Get neighbors
-- [ ] Get reverse neighbors
+- [x] Add node
+- [x] Add edge
+- [x] Get neighbors
+- [x] Get reverse neighbors
 
 ---
 
 ## Phase 4: Graph Construction
 
-- [ ] Build file-level graph (imports)
-- [ ] Build containment graph (file → symbols)
-- [ ] Build basic symbol references (if possible)
+- [x] Build file-level graph (imports)
+- [x] Build containment graph (file → symbols)
+- [x] Build basic symbol references (if possible)
 
 ---
 
 ## Phase 5: Index Storage
 
-- [ ] Store file metadata
-- [ ] Store symbol metadata
-- [ ] Link nodes and edges
+- [x] Store file metadata
+- [x] Store symbol metadata
+- [x] Link nodes and edges
 
 Optional:
-- [ ] Serialize graph to JSON
-- [ ] Load graph from JSON
+- [x] Serialize graph to JSON
+- [x] Load graph from JSON
 
 ---
 
 ## Phase 6: SCC Computation
 
-- [ ] Implement Tarjan’s algorithm (or Kosaraju)
-- [ ] Compute SCCs over:
+- [x] Implement Tarjan’s algorithm (or Kosaraju)
+- [x] Compute SCCs over:
   - module graph (minimum)
   - symbol graph (optional)
 
-- [ ] Collapse SCCs into super-nodes
-- [ ] Produce DAG
+- [x] Collapse SCCs into super-nodes
+- [x] Produce DAG
 
 ---
 
@@ -99,10 +96,10 @@ Optional:
 
 Tasks:
 
-- [ ] Exact match lookup
-- [ ] 1-hop expansion
-- [ ] 2-hop expansion (optional)
-- [ ] Include:
+- [x] Exact match lookup
+- [x] 1-hop expansion
+- [x] 2-hop expansion (optional)
+- [x] Include:
   - parent file
   - dependents
   - related tests
@@ -117,23 +114,24 @@ Given:
 
 Produce:
 
-- [ ] Identify affected nodes
-- [ ] Expand dependency neighborhood
-- [ ] Collapse SCCs
-- [ ] Topologically sort DAG
+- [x] Identify affected nodes
+- [x] Expand dependency neighborhood
+- [x] Collapse SCCs
+- [x] Topologically sort DAG
 
 Output:
 
-- ordered steps
-- parallel groups
-- risk nodes
+- [x] ordered steps
+- [x] parallel groups
+- [x] risk nodes
 
 ---
 
 ## Phase 9: Validation Mapping
 
-- [ ] Link files/symbols to tests
-- [ ] Link to build targets (if detectable)
+- [x] Link files/symbols to tests
+- [x] Link to build targets (if detectable)
+- [x] Implement tested_by edge heuristic
 
 ---
 
@@ -141,13 +139,22 @@ Output:
 
 Commands:
 
-- [ ] index
-- [ ] query <symbol>
-- [ ] plan <task>
+- [x] index
+- [x] query <symbol>
+- [x] plan <task>
 
 ---
 
-## Phase 11: Optimization
+## Phase 11: Visualization
+
+- [x] Export graph to DOT (Graphviz)
+- [x] Export graph to Mermaid (MD/HTML)
+- [x] Visualize SCC-collapsed DAG
+- [x] Highlight planning steps in graph
+
+---
+
+## Phase 12: Optimization
 
 - [ ] Cache graph
 - [ ] Incremental indexing (optional)
@@ -155,9 +162,9 @@ Commands:
 
 ---
 
-## Phase 12: Testing
+## Phase 13: Testing
 
-- [ ] Small repo test
+- [x] Small repo test
 - [ ] Medium repo test
 - [ ] Validate:
   - graph correctness
@@ -171,7 +178,6 @@ Commands:
 - [ ] LSP integration
 - [ ] Better call graph resolution
 - [ ] Language plugins
-- [ ] Visualization (graph output)
 
 ---
 
@@ -179,8 +185,9 @@ Commands:
 
 System can:
 
-- [ ] Index a repo
-- [ ] Retrieve dependency subgraph
-- [ ] Produce ordered plan
-- [ ] Identify parallelizable work
-- [ ] Suggest validation steps
+- [x] Index a repo
+- [x] Retrieve dependency subgraph
+- [x] Produce ordered plan
+- [x] Identify parallelizable work
+- [x] Suggest validation steps
+- [x] Visualize the DAG and execution plan
