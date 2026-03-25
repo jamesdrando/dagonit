@@ -187,11 +187,28 @@ var visualizeCmd = &cobra.Command{
 	},
 }
 
+var serveCmd = &cobra.Command{
+	Use:   "serve",
+	Short: "Starts a web server to visualize the graph",
+	Run: func(cmd *cobra.Command, args []string) {
+		port, _ := cmd.Flags().GetInt("port")
+		g, err := loadGraph()
+		if err != nil {
+			fmt.Printf("Error loading graph: %v\n", err)
+			return
+		}
+		if err := graph.StartServer(port, g); err != nil {
+			fmt.Printf("Error starting server: %v\n", err)
+		}
+	},
+}
+
 func main() {
 	visualizeCmd.Flags().String("format", "dot", "Output format: dot or mermaid")
 	visualizeCmd.Flags().StringSlice("seeds", []string{}, "Seeds for plan mode")
+	serveCmd.Flags().Int("port", 3737, "Port to run the server on")
 
-	rootCmd.AddCommand(indexCmd, queryCmd, planCmd, visualizeCmd)
+	rootCmd.AddCommand(indexCmd, queryCmd, planCmd, visualizeCmd, serveCmd)
 	if err := rootCmd.Execute(); err != nil {
 		fmt.Println(err)
 		os.Exit(1)

@@ -1,6 +1,7 @@
 package indexer
 
 import (
+	"dagonit/parser"
 	"os"
 	"path/filepath"
 	"testing"
@@ -43,11 +44,11 @@ func TestScanner_Scan(t *testing.T) {
 		t.Fatalf("Scan failed: %v", err)
 	}
 
-	expectedFiles := map[string]Language{
-		"main.go":          LangGo,
-		"src/app.ts":       LangTypeScript,
-		"src/util.js":      LangJavaScript,
-		"python/script.py": LangPython,
+	expectedFiles := map[string]parser.Language{
+		"main.go":          parser.LangGo,
+		"src/app.ts":       parser.LangTypeScript,
+		"src/util.js":      parser.LangJavaScript,
+		"python/script.py": parser.LangPython,
 	}
 
 	if len(files) != len(expectedFiles) {

@@ -93,7 +93,21 @@ If you need to refactor a specific set of symbols, use the `plan` command. It wi
 - **Risks**: High fan-in nodes (nodes that many other things depend on) or detected cycles.
 
 ### Step 4: Visualizing the DAG
-To get a bird's-eye view of your project's architecture, use the `visualize` command.
+To get a bird's-eye view of your project's architecture, use the `serve` or `visualize` commands.
+
+#### Interactive Web Visualizer
+Start the interactive web visualizer to explore your graph with a force-directed layout:
+
+```bash
+./dagonit serve
+```
+This launches a server at `http://localhost:3737`. The visualizer features:
+- **Interactive Force-Directed Layout:** Nodes arrange themselves naturally.
+- **Dark Mode Aesthetic:** A modern, matte dark theme.
+- **Pan & Zoom:** Use mouse wheel to zoom, click and drag background to pan.
+- **Node Dragging:** Click and drag nodes to rearrange the graph.
+- **Tooltips:** Hover over nodes to see details.
+- **Physics Controls:** Adjust repulsion and spring strength in real-time.
 
 #### Mermaid (Interactive/Browser)
 Export the SCC-collapsed DAG for use in a [Mermaid Live Editor](https://mermaid.live/):
