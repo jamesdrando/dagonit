@@ -154,13 +154,11 @@ const indexHTML = `
                 <div style="font-size: 11px; color: #aaa; margin-bottom: 5px;">Node Types:</div>
                 <div>
                     <label><input type="checkbox" id="node-file" checked> Files</label>
-                    <label><input type="checkbox" id="node-symbol" checked> Symbols</label>
-                    <label><input type="checkbox" id="node-module" checked> Modules</label>
-                    <label><input type="checkbox" id="node-scc" checked> SCCs</label>
-                    <label><input type="checkbox" id="node-repository"> Repository</label>
-                    <label><input type="checkbox" id="node-test"> Tests</label>
-                    <label><input type="checkbox" id="node-build-target"> Build Targets</label>
-                    <label><input type="checkbox" id="node-config"> Configs</label>
+                    <label><input type="checkbox" id="node-function" checked> Functions</label>
+                    <label><input type="checkbox" id="node-class" checked> Classes</label>
+                    <label><input type="checkbox" id="node-method" checked> Methods</label>
+                    <label><input type="checkbox" id="node-type" checked> Types</label>
+                    <label><input type="checkbox" id="node-test" checked> Tests</label>
                 </div>
                 <div style="font-size: 11px; color: #aaa; margin: 10px 0 5px 0;">Edge Types:</div>
                 <div>
@@ -272,6 +270,7 @@ const indexHTML = `
             .then(res => res.json())
             .then(data => {
                 initGraph(data);
+                applyPresetFilters('full'); // Ensure we start with full view
                 applyFilters(); // Apply initial filters
                 requestAnimationFrame(loop);
             })
@@ -319,28 +318,24 @@ const indexHTML = `
 
         function getNodeRadius(type) {
             switch(type) {
-                case 'module': return 12;
-                case 'package': return 10;
                 case 'file': return 8; 
-                case 'symbol': return 6;
-                case 'repository': return 14;
+                case 'function': return 6;
+                case 'class': return 7;
+                case 'method': return 5;
+                case 'type': return 6;
                 case 'test': return 7;
-                case 'build_target': return 9;
-                case 'scc': return 11;
                 default: return 5;
             }
         }
 
         function getNodeColor(type) {
             switch(type) {
-                case 'module': return CONFIG.colors.node.module;
-                case 'package': return CONFIG.colors.node.package;
                 case 'file': return CONFIG.colors.node.file;
-                case 'symbol': return CONFIG.colors.node.symbol;
-                case 'repository': return CONFIG.colors.node.repository;
+                case 'function': return CONFIG.colors.node.symbol; // Reuse symbol color for functions
+                case 'class': return CONFIG.colors.node.module; // Reuse module color for classes
+                case 'method': return CONFIG.colors.node.symbol; // Reuse symbol color for methods
+                case 'type': return CONFIG.colors.node.package; // Reuse package color for types
                 case 'test': return CONFIG.colors.node.test;
-                case 'build_target': return CONFIG.colors.node.build_target;
-                case 'scc': return CONFIG.colors.node.scc;
                 default: return CONFIG.colors.node.default;
             }
         }
@@ -596,15 +591,15 @@ const indexHTML = `
 
         // Filtering state
         let filterState = {
-            nodeTypes: new Set(['file', 'symbol', 'module', 'scc', 'repository', 'test', 'build_target', 'config']),
+            nodeTypes: new Set(['file', 'test', 'function', 'class', 'method', 'type']), // Based on actual data
             edgeTypes: new Set(['contains', 'imports', 'calls', 'tested_by', 'builds', 'configures']),
             activePreset: 'full'
         };
 
         // Apply preset filters
         function applyPresetFilters(mode) {
-            // Reset to all types
-            filterState.nodeTypes = new Set(['file', 'symbol', 'module', 'scc', 'repository', 'test', 'build_target', 'config']);
+            // Reset to all types based on actual data
+            filterState.nodeTypes = new Set(['file', 'test', 'function', 'class', 'method', 'type']);
             filterState.edgeTypes = new Set(['contains', 'imports', 'calls', 'tested_by', 'builds', 'configures']);
             
             switch(mode) {
@@ -612,26 +607,16 @@ const indexHTML = `
                     filterState.nodeTypes = new Set(['file']);
                     filterState.edgeTypes = new Set(['contains']);
                     break;
-                case 'symbols':
-                    filterState.nodeTypes = new Set(['symbol']);
+                case 'functions': // Changed from 'symbols' to match actual data
+                    filterState.nodeTypes = new Set(['function', 'method', 'class', 'type']);
                     filterState.edgeTypes = new Set(['calls']);
                     break;
+                // Since we don't have module/repository/etc. in the actual data, we'll skip those presets for now
                 case 'modules':
-                    filterState.nodeTypes = new Set(['module']);
-                    filterState.edgeTypes = new Set(['contains']);
-                    break;
                 case 'dependencies':
-                    filterState.nodeTypes = new Set(['file', 'module']);
-                    filterState.edgeTypes = new Set(['imports', 'contains']);
-                    break;
                 case 'calls':
-                    filterState.nodeTypes = new Set(['symbol']);
-                    filterState.edgeTypes = new Set(['calls']);
-                    break;
                 case 'scc':
-                    filterState.nodeTypes = new Set(['scc']);
-                    filterState.edgeTypes = new Set([]); // SCCs typically don't have outgoing edges in condensed graph
-                    break;
+                    // For now, treat these as 'full' since we don't have those node types in the data
                 case 'full':
                 case 'custom':
                     // Keep all types (will be refined by checkboxes in custom mode)

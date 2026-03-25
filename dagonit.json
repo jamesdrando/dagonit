@@ -1,102 +1,106 @@
 {
   "nodes": [
     {
-      "id": "graph/visualize.go#ToDOT",
+      "id": "retrieval/retrieval.go#NewEngine",
+      "type": "function",
+      "metadata": {
+        "file": "retrieval/retrieval.go",
+        "kind": "function",
+        "name": "NewEngine",
+        "span": {
+          "Start": 12,
+          "End": 14
+        }
+      }
+    },
+    {
+      "id": "graph/scc.go#ToDAG",
+      "type": "method",
+      "metadata": {
+        "file": "graph/scc.go",
+        "kind": "method",
+        "name": "ToDAG",
+        "span": {
+          "Start": 91,
+          "End": 137
+        }
+      }
+    },
+    {
+      "id": "graph/server.go#StartServer",
+      "type": "function",
+      "metadata": {
+        "file": "graph/server.go",
+        "kind": "function",
+        "name": "StartServer",
+        "span": {
+          "Start": 10,
+          "End": 39
+        }
+      }
+    },
+    {
+      "id": "indexer/scanner.go#FileInfo",
+      "type": "class",
+      "metadata": {
+        "file": "indexer/scanner.go",
+        "kind": "class",
+        "name": "FileInfo",
+        "span": {
+          "Start": 20,
+          "End": 25
+        }
+      }
+    },
+    {
+      "id": "parser/parser.go#FileMetadata",
+      "type": "class",
+      "metadata": {
+        "file": "parser/parser.go",
+        "kind": "class",
+        "name": "FileMetadata",
+        "span": {
+          "Start": 42,
+          "End": 47
+        }
+      }
+    },
+    {
+      "id": "parser/tsjs.go#Parse",
+      "type": "method",
+      "metadata": {
+        "file": "parser/tsjs.go",
+        "kind": "method",
+        "name": "Parse",
+        "span": {
+          "Start": 21,
+          "End": 63
+        }
+      }
+    },
+    {
+      "id": "planner/planner.go#Plan",
+      "type": "class",
+      "metadata": {
+        "file": "planner/planner.go",
+        "kind": "class",
+        "name": "Plan",
+        "span": {
+          "Start": 10,
+          "End": 18
+        }
+      }
+    },
+    {
+      "id": "graph/visualize.go#ToMermaid",
       "type": "function",
       "metadata": {
         "file": "graph/visualize.go",
         "kind": "function",
-        "name": "ToDOT",
+        "name": "ToMermaid",
         "span": {
-          "Start": 9,
-          "End": 56
-        }
-      }
-    },
-    {
-      "id": "indexer/indexer.go#NewIndexer",
-      "type": "function",
-      "metadata": {
-        "file": "indexer/indexer.go",
-        "kind": "function",
-        "name": "NewIndexer",
-        "span": {
-          "Start": 18,
-          "End": 29
-        }
-      }
-    },
-    {
-      "id": "indexer/scanner_test.go#TestScanner_Scan",
-      "type": "test",
-      "metadata": {
-        "file": "indexer/scanner_test.go",
-        "kind": "function",
-        "name": "TestScanner_Scan",
-        "span": {
-          "Start": 10,
-          "End": 68
-        }
-      }
-    },
-    {
-      "id": "parser/parser.go",
-      "type": "file",
-      "metadata": {
-        "imports": [],
-        "isTest": false,
-        "language": "go"
-      }
-    },
-    {
-      "id": "parser/tsjs.go#NewTSJSParser",
-      "type": "function",
-      "metadata": {
-        "file": "parser/tsjs.go",
-        "kind": "function",
-        "name": "NewTSJSParser",
-        "span": {
-          "Start": 10,
-          "End": 12
-        }
-      }
-    },
-    {
-      "id": "cmd/dagonit/main.go#main",
-      "type": "function",
-      "metadata": {
-        "file": "cmd/dagonit/main.go",
-        "kind": "function",
-        "name": "main",
-        "span": {
-          "Start": 206,
-          "End": 216
-        }
-      }
-    },
-    {
-      "id": "graph/graph.go#GetNeighbors",
-      "type": "method",
-      "metadata": {
-        "file": "graph/graph.go",
-        "kind": "method",
-        "name": "GetNeighbors",
-        "span": {
-          "Start": 117,
-          "End": 121
-        }
-      }
-    },
-    {
-      "id": "indexer/scanner.go#Scan",
-      "type": "method",
-      "metadata": {
-        "file": "indexer/scanner.go",
-        "kind": "method",
-        "name": "Scan",
-        "span": {
-          "Start": 76,
-          "End": 129
+          "Start": 59,
+          "End": 120
         }
       }
     },
@@ -114,24 +118,92 @@
       }
     },
     {
-      "id": "parser/parser.go#Span",
-      "type": "class",
+      "id": "cmd/dagonit/main.go#main",
+      "type": "function",
       "metadata": {
-        "file": "parser/parser.go",
-        "kind": "class",
-        "name": "Span",
+        "file": "cmd/dagonit/main.go",
+        "kind": "function",
+        "name": "main",
         "span": {
-          "Start": 28,
-          "End": 31
+          "Start": 206,
+          "End": 216
         }
       }
     },
     {
-      "id": "retrieval/retrieval.go",
+      "id": "graph/graph.go#ExportToJSON",
+      "type": "method",
+      "metadata": {
+        "file": "graph/graph.go",
+        "kind": "method",
+        "name": "ExportToJSON",
+        "span": {
+          "Start": 131,
+          "End": 158
+        }
+      }
+    },
+    {
+      "id": "indexer/indexer.go#NewIndexer",
+      "type": "function",
+      "metadata": {
+        "file": "indexer/indexer.go",
+        "kind": "function",
+        "name": "NewIndexer",
+        "span": {
+          "Start": 18,
+          "End": 29
+        }
+      }
+    },
+    {
+      "id": "indexer/scanner.go",
       "type": "file",
       "metadata": {
         "imports": [
-          "dagonit/graph"
+          "dagonit/parser",
+          "os",
+          "path/filepath",
+          "strings"
+        ],
+        "isTest": false,
+        "language": "go"
+      }
+    },
+    {
+      "id": "indexer/scanner.go#NewScanner",
+      "type": "function",
+      "metadata": {
+        "file": "indexer/scanner.go",
+        "kind": "function",
+        "name": "NewScanner",
+        "span": {
+          "Start": 37,
+          "End": 73
+        }
+      }
+    },
+    {
+      "id": "planner/planner.go",
+      "type": "file",
+      "metadata": {
+        "imports": [
+          "dagonit/graph",
+          "fmt",
+          "sort"
+        ],
+        "isTest": false,
+        "language": "go"
+      }
+    },
+    {
+      "id": "graph/graph.go",
+      "type": "file",
+      "metadata": {
+        "imports": [
+          "encoding/json",
+          "errors",
+          "sync"
         ],
         "isTest": false,
         "language": "go"
@@ -151,10 +223,25 @@
       }
     },
     {
-      "id": "graph/graph_test.go",
+      "id": "graph/graph.go#GetInNeighbors",
+      "type": "method",
+      "metadata": {
+        "file": "graph/graph.go",
+        "kind": "method",
+        "name": "GetInNeighbors",
+        "span": {
+          "Start": 124,
+          "End": 128
+        }
+      }
+    },
+    {
+      "id": "graph/scc_test.go",
       "type": "test",
       "metadata": {
         "imports": [
+          "reflect",
+          "sort",
           "testing"
         ],
         "isTest": true,
@@ -162,28 +249,41 @@
       }
     },
     {
-      "id": "graph/scc_test.go#TestComputeSCCs",
-      "type": "test",
+      "id": "parser/go.go#NewGoParser",
+      "type": "function",
       "metadata": {
-        "file": "graph/scc_test.go",
+        "file": "parser/go.go",
         "kind": "function",
-        "name": "TestComputeSCCs",
+        "name": "NewGoParser",
         "span": {
-          "Start": 9,
-          "End": 57
+          "Start": 12,
+          "End": 14
         }
       }
     },
     {
-      "id": "indexer/indexer.go#Indexer",
-      "type": "class",
+      "id": "parser/python.go#NewPythonParser",
+      "type": "function",
+      "metadata": {
+        "file": "parser/python.go",
+        "kind": "function",
+        "name": "NewPythonParser",
+        "span": {
+          "Start": 10,
+          "End": 12
+        }
+      }
+    },
+    {
+      "id": "indexer/indexer.go#Index",
+      "type": "method",
       "metadata": {
         "file": "indexer/indexer.go",
-        "kind": "class",
-        "name": "Indexer",
+        "kind": "method",
+        "name": "Index",
         "span": {
-          "Start": 12,
-          "End": 16
+          "Start": 31,
+          "End": 170
         }
       }
     },
@@ -202,79 +302,93 @@
       }
     },
     {
-      "id": "parser/go.go#GoParser",
-      "type": "class",
+      "id": "parser/parser.go#Language",
+      "type": "type",
       "metadata": {
-        "file": "parser/go.go",
-        "kind": "class",
-        "name": "GoParser",
+        "file": "parser/parser.go",
+        "kind": "type",
+        "name": "Language",
+        "span": {
+          "Start": 4,
+          "End": 4
+        }
+      }
+    },
+    {
+      "id": "parser/tsjs.go#NewTSJSParser",
+      "type": "function",
+      "metadata": {
+        "file": "parser/tsjs.go",
+        "kind": "function",
+        "name": "NewTSJSParser",
         "span": {
           "Start": 10,
-          "End": 10
+          "End": 12
         }
       }
     },
     {
-      "id": "cmd/dagonit/main.go#loadGraph",
-      "type": "function",
-      "metadata": {
-        "file": "cmd/dagonit/main.go",
-        "kind": "function",
-        "name": "loadGraph",
-        "span": {
-          "Start": 45,
-          "End": 55
-        }
-      }
-    },
-    {
-      "id": "graph/scc.go",
-      "type": "file",
-      "metadata": {
-        "imports": [
-          "fmt",
-          "sort"
-        ],
-        "isTest": false,
-        "language": "go"
-      }
-    },
-    {
-      "id": "graph/scc_test.go#TestToDAG",
+      "id": "planner/planner_test.go#TestGeneratePlan",
       "type": "test",
       "metadata": {
-        "file": "graph/scc_test.go",
+        "file": "planner/planner_test.go",
         "kind": "function",
-        "name": "TestToDAG",
+        "name": "TestGeneratePlan",
         "span": {
-          "Start": 59,
-          "End": 112
+          "Start": 10,
+          "End": 141
         }
       }
     },
     {
-      "id": "indexer/indexer.go#Index",
+      "id": "retrieval/retrieval.go#expand",
       "type": "method",
       "metadata": {
-        "file": "indexer/indexer.go",
+        "file": "retrieval/retrieval.go",
         "kind": "method",
-        "name": "Index",
+        "name": "expand",
         "span": {
-          "Start": 31,
-          "End": 170
+          "Start": 47,
+          "End": 70
         }
       }
     },
     {
-      "id": "indexer/scanner.go#NewScanner",
-      "type": "function",
+      "id": "parser/go_test.go#TestGoParser",
+      "type": "test",
       "metadata": {
-        "file": "indexer/scanner.go",
+        "file": "parser/go_test.go",
         "kind": "function",
-        "name": "NewScanner",
+        "name": "TestGoParser",
         "span": {
-          "Start": 37,
-          "End": 73
+          "Start": 7,
+          "End": 46
+        }
+      }
+    },
+    {
+      "id": "parser/tsjs.go#TSJSParser",
+      "type": "class",
+      "metadata": {
+        "file": "parser/tsjs.go",
+        "kind": "class",
+        "name": "TSJSParser",
+        "span": {
+          "Start": 8,
+          "End": 8
+        }
+      }
+    },
+    {
+      "id": "indexer/indexer.go#Indexer",
+      "type": "class",
+      "metadata": {
+        "file": "indexer/indexer.go",
+        "kind": "class",
+        "name": "Indexer",
+        "span": {
+          "Start": 12,
+          "End": 16
         }
       }
     },
@@ -292,54 +406,54 @@
       }
     },
     {
-      "id": "parser/python.go#NewPythonParser",
-      "type": "function",
+      "id": "retrieval/retrieval.go#FindNodesByTerm",
+      "type": "method",
       "metadata": {
-        "file": "parser/python.go",
-        "kind": "function",
-        "name": "NewPythonParser",
+        "file": "retrieval/retrieval.go",
+        "kind": "method",
+        "name": "FindNodesByTerm",
         "span": {
-          "Start": 10,
-          "End": 12
+          "Start": 17,
+          "End": 30
         }
       }
     },
     {
-      "id": "graph/graph.go#AddEdge",
-      "type": "method",
+      "id": "graph/graph.go#EdgeType",
+      "type": "type",
       "metadata": {
         "file": "graph/graph.go",
-        "kind": "method",
-        "name": "AddEdge",
+        "kind": "type",
+        "name": "EdgeType",
         "span": {
-          "Start": 80,
-          "End": 94
+          "Start": 31,
+          "End": 31
         }
       }
     },
     {
-      "id": "graph/graph.go#GetInNeighbors",
+      "id": "graph/graph.go#AddNode",
       "type": "method",
       "metadata": {
         "file": "graph/graph.go",
         "kind": "method",
-        "name": "GetInNeighbors",
+        "name": "AddNode",
         "span": {
-          "Start": 124,
-          "End": 128
+          "Start": 73,
+          "End": 77
         }
       }
     },
     {
-      "id": "graph/graph.go#ImportFromJSON",
+      "id": "graph/graph.go#GetNode",
       "type": "method",
       "metadata": {
         "file": "graph/graph.go",
         "kind": "method",
-        "name": "ImportFromJSON",
+        "name": "GetNode",
         "span": {
-          "Start": 161,
-          "End": 188
+          "Start": 97,
+          "End": 102
         }
       }
     },
@@ -357,63 +471,24 @@
       }
     },
     {
-      "id": "parser/parser.go#FileMetadata",
-      "type": "class",
+      "id": "indexer/scanner.go#FileType",
+      "type": "type",
       "metadata": {
-        "file": "parser/parser.go",
-        "kind": "class",
-        "name": "FileMetadata",
+        "file": "indexer/scanner.go",
+        "kind": "type",
+        "name": "FileType",
         "span": {
-          "Start": 42,
-          "End": 47
+          "Start": 11,
+          "End": 11
         }
       }
     },
     {
-      "id": "parser/parser.go#Parser",
-      "type": "interface",
-      "metadata": {
-        "file": "parser/parser.go",
-        "kind": "interface",
-        "name": "Parser",
-        "span": {
-          "Start": 50,
-          "End": 52
-        }
-      }
-    },
-    {
-      "id": "graph/graph.go#Edge",
-      "type": "class",
-      "metadata": {
-        "file": "graph/graph.go",
-        "kind": "class",
-        "name": "Edge",
-        "span": {
-          "Start": 43,
-          "End": 47
-        }
-      }
-    },
-    {
-      "id": "graph/graph.go#ExportToJSON",
-      "type": "method",
-      "metadata": {
-        "file": "graph/graph.go",
-        "kind": "method",
-        "name": "ExportToJSON",
-        "span": {
-          "Start": 131,
-          "End": 158
-        }
-      }
-    },
-    {
-      "id": "graph/visualize.go",
+      "id": "parser/tsjs.go",
       "type": "file",
       "metadata": {
         "imports": [
-          "fmt",
+          "regexp",
           "strings"
         ],
         "isTest": false,
@@ -421,80 +496,54 @@
       }
     },
     {
-      "id": "retrieval/retrieval.go#FindNodesByTerm",
-      "type": "method",
+      "id": "graph/scc_test.go#TestComputeSCCs",
+      "type": "test",
       "metadata": {
-        "file": "retrieval/retrieval.go",
-        "kind": "method",
-        "name": "FindNodesByTerm",
-        "span": {
-          "Start": 17,
-          "End": 30
-        }
-      }
-    },
-    {
-      "id": "graph/graph.go#NewGraph",
-      "type": "function",
-      "metadata": {
-        "file": "graph/graph.go",
+        "file": "graph/scc_test.go",
         "kind": "function",
-        "name": "NewGraph",
+        "name": "TestComputeSCCs",
         "span": {
-          "Start": 64,
-          "End": 70
+          "Start": 9,
+          "End": 57
         }
       }
     },
     {
-      "id": "graph/server.go#StartServer",
-      "type": "function",
+      "id": "indexer/indexer.go",
+      "type": "file",
       "metadata": {
-        "file": "graph/server.go",
-        "kind": "function",
-        "name": "StartServer",
-        "span": {
-          "Start": 10,
-          "End": 39
-        }
+        "imports": [
+          "dagonit/graph",
+          "dagonit/parser",
+          "fmt",
+          "os",
+          "strings"
+        ],
+        "isTest": false,
+        "language": "go"
       }
     },
     {
-      "id": "planner/planner.go#Plan",
-      "type": "class",
+      "id": "parser/go_test.go",
+      "type": "test",
+      "metadata": {
+        "imports": [
+          "testing"
+        ],
+        "isTest": true,
+        "language": "go"
+      }
+    },
+    {
+      "id": "planner/planner.go#expand",
+      "type": "function",
       "metadata": {
         "file": "planner/planner.go",
-        "kind": "class",
-        "name": "Plan",
-        "span": {
-          "Start": 10,
-          "End": 18
-        }
-      }
-    },
-    {
-      "id": "parser/go.go#NewGoParser",
-      "type": "function",
-      "metadata": {
-        "file": "parser/go.go",
         "kind": "function",
-        "name": "NewGoParser",
+        "name": "expand",
         "span": {
-          "Start": 12,
-          "End": 14
-        }
-      }
-    },
-    {
-      "id": "parser/parser.go#Symbol",
-      "type": "class",
-      "metadata": {
-        "file": "parser/parser.go",
-        "kind": "class",
-        "name": "Symbol",
-        "span": {
-          "Start": 34,
-          "End": 39
+          "Start": 159,
+          "End": 168
         }
       }
     },
@@ -509,6 +558,46 @@
           "testing"
         ],
         "isTest": true,
+        "language": "go"
+      }
+    },
+    {
+      "id": "retrieval/retrieval.go#GetSubgraph",
+      "type": "method",
+      "metadata": {
+        "file": "retrieval/retrieval.go",
+        "kind": "method",
+        "name": "GetSubgraph",
+        "span": {
+          "Start": 33,
+          "End": 45
+        }
+      }
+    },
+    {
+      "id": "indexer/scanner_test.go#TestScanner_Scan",
+      "type": "test",
+      "metadata": {
+        "file": "indexer/scanner_test.go",
+        "kind": "function",
+        "name": "TestScanner_Scan",
+        "span": {
+          "Start": 10,
+          "End": 68
+        }
+      }
+    },
+    {
+      "id": "parser/go.go",
+      "type": "file",
+      "metadata": {
+        "imports": [
+          "go/ast",
+          "go/parser",
+          "go/token",
+          "strings"
+        ],
+        "isTest": false,
         "language": "go"
       }
     },
@@ -531,15 +620,28 @@
       }
     },
     {
-      "id": "graph/scc.go#ToDAG",
+      "id": "graph/graph.go#NodeType",
+      "type": "type",
+      "metadata": {
+        "file": "graph/graph.go",
+        "kind": "type",
+        "name": "NodeType",
+        "span": {
+          "Start": 10,
+          "End": 10
+        }
+      }
+    },
+    {
+      "id": "graph/graph.go#GetNodes",
       "type": "method",
       "metadata": {
-        "file": "graph/scc.go",
+        "file": "graph/graph.go",
         "kind": "method",
-        "name": "ToDAG",
+        "name": "GetNodes",
         "span": {
-          "Start": 91,
-          "End": 137
+          "Start": 105,
+          "End": 114
         }
       }
     },
@@ -557,195 +659,11 @@
       }
     },
     {
-      "id": "parser/go_test.go#TestGoParser",
-      "type": "test",
-      "metadata": {
-        "file": "parser/go_test.go",
-        "kind": "function",
-        "name": "TestGoParser",
-        "span": {
-          "Start": 7,
-          "End": 46
-        }
-      }
-    },
-    {
-      "id": "parser/parser.go#Language",
-      "type": "type",
-      "metadata": {
-        "file": "parser/parser.go",
-        "kind": "type",
-        "name": "Language",
-        "span": {
-          "Start": 4,
-          "End": 4
-        }
-      }
-    },
-    {
-      "id": "parser/parser.go#SymbolKind",
-      "type": "type",
-      "metadata": {
-        "file": "parser/parser.go",
-        "kind": "type",
-        "name": "SymbolKind",
-        "span": {
-          "Start": 15,
-          "End": 15
-        }
-      }
-    },
-    {
-      "id": "graph/graph.go#Graph",
-      "type": "class",
-      "metadata": {
-        "file": "graph/graph.go",
-        "kind": "class",
-        "name": "Graph",
-        "span": {
-          "Start": 56,
-          "End": 61
-        }
-      }
-    },
-    {
-      "id": "graph/scc.go#ComputeSCCs",
-      "type": "method",
-      "metadata": {
-        "file": "graph/scc.go",
-        "kind": "method",
-        "name": "ComputeSCCs",
-        "span": {
-          "Start": 10,
-          "End": 87
-        }
-      }
-    },
-    {
-      "id": "parser/go.go",
+      "id": "graph/visualize.go",
       "type": "file",
       "metadata": {
         "imports": [
-          "go/ast",
-          "go/parser",
-          "go/token",
-          "strings"
-        ],
-        "isTest": false,
-        "language": "go"
-      }
-    },
-    {
-      "id": "parser/tsjs.go#TSJSParser",
-      "type": "class",
-      "metadata": {
-        "file": "parser/tsjs.go",
-        "kind": "class",
-        "name": "TSJSParser",
-        "span": {
-          "Start": 8,
-          "End": 8
-        }
-      }
-    },
-    {
-      "id": "planner/planner_test.go#TestGeneratePlan",
-      "type": "test",
-      "metadata": {
-        "file": "planner/planner_test.go",
-        "kind": "function",
-        "name": "TestGeneratePlan",
-        "span": {
-          "Start": 10,
-          "End": 141
-        }
-      }
-    },
-    {
-      "id": "graph/graph.go",
-      "type": "file",
-      "metadata": {
-        "imports": [
-          "encoding/json",
-          "errors",
-          "sync"
-        ],
-        "isTest": false,
-        "language": "go"
-      }
-    },
-    {
-      "id": "graph/graph.go#NodeType",
-      "type": "type",
-      "metadata": {
-        "file": "graph/graph.go",
-        "kind": "type",
-        "name": "NodeType",
-        "span": {
-          "Start": 10,
-          "End": 10
-        }
-      }
-    },
-    {
-      "id": "parser/python.go#PythonParser",
-      "type": "class",
-      "metadata": {
-        "file": "parser/python.go",
-        "kind": "class",
-        "name": "PythonParser",
-        "span": {
-          "Start": 8,
-          "End": 8
-        }
-      }
-    },
-    {
-      "id": "graph/scc_test.go",
-      "type": "test",
-      "metadata": {
-        "imports": [
-          "reflect",
-          "sort",
-          "testing"
-        ],
-        "isTest": true,
-        "language": "go"
-      }
-    },
-    {
-      "id": "parser/go_test.go",
-      "type": "test",
-      "metadata": {
-        "imports": [
-          "testing"
-        ],
-        "isTest": true,
-        "language": "go"
-      }
-    },
-    {
-      "id": "retrieval/retrieval.go#GetSubgraph",
-      "type": "method",
-      "metadata": {
-        "file": "retrieval/retrieval.go",
-        "kind": "method",
-        "name": "GetSubgraph",
-        "span": {
-          "Start": 33,
-          "End": 45
-        }
-      }
-    },
-    {
-      "id": "indexer/indexer.go",
-      "type": "file",
-      "metadata": {
-        "imports": [
-          "dagonit/graph",
-          "dagonit/parser",
           "fmt",
-          "os",
           "strings"
         ],
         "isTest": false,
@@ -753,176 +671,23 @@
       }
     },
     {
-      "id": "planner/planner.go",
+      "id": "indexer/scanner.go#Scan",
+      "type": "method",
+      "metadata": {
+        "file": "indexer/scanner.go",
+        "kind": "method",
+        "name": "Scan",
+        "span": {
+          "Start": 76,
+          "End": 129
+        }
+      }
+    },
+    {
+      "id": "parser/parser.go",
       "type": "file",
       "metadata": {
-        "imports": [
-          "dagonit/graph",
-          "fmt",
-          "sort"
-        ],
-        "isTest": false,
-        "language": "go"
-      }
-    },
-    {
-      "id": "planner/planner.go#expand",
-      "type": "function",
-      "metadata": {
-        "file": "planner/planner.go",
-        "kind": "function",
-        "name": "expand",
-        "span": {
-          "Start": 159,
-          "End": 168
-        }
-      }
-    },
-    {
-      "id": "retrieval/retrieval.go#NewEngine",
-      "type": "function",
-      "metadata": {
-        "file": "retrieval/retrieval.go",
-        "kind": "function",
-        "name": "NewEngine",
-        "span": {
-          "Start": 12,
-          "End": 14
-        }
-      }
-    },
-    {
-      "id": "graph/graph.go#AddNode",
-      "type": "method",
-      "metadata": {
-        "file": "graph/graph.go",
-        "kind": "method",
-        "name": "AddNode",
-        "span": {
-          "Start": 73,
-          "End": 77
-        }
-      }
-    },
-    {
-      "id": "indexer/scanner.go#FileType",
-      "type": "type",
-      "metadata": {
-        "file": "indexer/scanner.go",
-        "kind": "type",
-        "name": "FileType",
-        "span": {
-          "Start": 11,
-          "End": 11
-        }
-      }
-    },
-    {
-      "id": "indexer/scanner.go#FileInfo",
-      "type": "class",
-      "metadata": {
-        "file": "indexer/scanner.go",
-        "kind": "class",
-        "name": "FileInfo",
-        "span": {
-          "Start": 20,
-          "End": 25
-        }
-      }
-    },
-    {
-      "id": "parser/tsjs.go#Parse",
-      "type": "method",
-      "metadata": {
-        "file": "parser/tsjs.go",
-        "kind": "method",
-        "name": "Parse",
-        "span": {
-          "Start": 21,
-          "End": 63
-        }
-      }
-    },
-    {
-      "id": "retrieval/retrieval.go#Engine",
-      "type": "class",
-      "metadata": {
-        "file": "retrieval/retrieval.go",
-        "kind": "class",
-        "name": "Engine",
-        "span": {
-          "Start": 8,
-          "End": 10
-        }
-      }
-    },
-    {
-      "id": "go.mod",
-      "type": "build_target",
-      "metadata": {
-        "path": "go.mod"
-      }
-    },
-    {
-      "id": "graph/graph.go#EdgeType",
-      "type": "type",
-      "metadata": {
-        "file": "graph/graph.go",
-        "kind": "type",
-        "name": "EdgeType",
-        "span": {
-          "Start": 31,
-          "End": 31
-        }
-      }
-    },
-    {
-      "id": "graph/graph.go#GetNode",
-      "type": "method",
-      "metadata": {
-        "file": "graph/graph.go",
-        "kind": "method",
-        "name": "GetNode",
-        "span": {
-          "Start": 97,
-          "End": 102
-        }
-      }
-    },
-    {
-      "id": "indexer/scanner.go#Scanner",
-      "type": "class",
-      "metadata": {
-        "file": "indexer/scanner.go",
-        "kind": "class",
-        "name": "Scanner",
-        "span": {
-          "Start": 28,
-          "End": 34
-        }
-      }
-    },
-    {
-      "id": "parser/python.go#Parse",
-      "type": "method",
-      "metadata": {
-        "file": "parser/python.go",
-        "kind": "method",
-        "name": "Parse",
-        "span": {
-          "Start": 20,
-          "End": 61
-        }
-      }
-    },
-    {
-      "id": "parser/tsjs.go",
-      "type": "file",
-      "metadata": {
-        "imports": [
-          "regexp",
-          "strings"
-        ],
+        "imports": [],
         "isTest": false,
         "language": "go"
       }
@@ -941,43 +706,265 @@
       }
     },
     {
-      "id": "graph/graph.go#GetNodes",
+      "id": "graph/graph.go#ImportFromJSON",
       "type": "method",
       "metadata": {
         "file": "graph/graph.go",
         "kind": "method",
-        "name": "GetNodes",
+        "name": "ImportFromJSON",
         "span": {
-          "Start": 105,
-          "End": 114
+          "Start": 161,
+          "End": 188
         }
       }
     },
     {
-      "id": "graph/visualize.go#ToMermaid",
+      "id": "graph/scc.go#ComputeSCCs",
+      "type": "method",
+      "metadata": {
+        "file": "graph/scc.go",
+        "kind": "method",
+        "name": "ComputeSCCs",
+        "span": {
+          "Start": 10,
+          "End": 87
+        }
+      }
+    },
+    {
+      "id": "go.mod",
+      "type": "build_target",
+      "metadata": {
+        "path": "go.mod"
+      }
+    },
+    {
+      "id": "graph/graph_test.go",
+      "type": "test",
+      "metadata": {
+        "imports": [
+          "testing"
+        ],
+        "isTest": true,
+        "language": "go"
+      }
+    },
+    {
+      "id": "parser/go.go#GoParser",
+      "type": "class",
+      "metadata": {
+        "file": "parser/go.go",
+        "kind": "class",
+        "name": "GoParser",
+        "span": {
+          "Start": 10,
+          "End": 10
+        }
+      }
+    },
+    {
+      "id": "parser/parser.go#Parser",
+      "type": "interface",
+      "metadata": {
+        "file": "parser/parser.go",
+        "kind": "interface",
+        "name": "Parser",
+        "span": {
+          "Start": 50,
+          "End": 52
+        }
+      }
+    },
+    {
+      "id": "parser/python.go#Parse",
+      "type": "method",
+      "metadata": {
+        "file": "parser/python.go",
+        "kind": "method",
+        "name": "Parse",
+        "span": {
+          "Start": 20,
+          "End": 61
+        }
+      }
+    },
+    {
+      "id": "retrieval/retrieval.go",
+      "type": "file",
+      "metadata": {
+        "imports": [
+          "dagonit/graph"
+        ],
+        "isTest": false,
+        "language": "go"
+      }
+    },
+    {
+      "id": "cmd/dagonit/main.go#loadGraph",
+      "type": "function",
+      "metadata": {
+        "file": "cmd/dagonit/main.go",
+        "kind": "function",
+        "name": "loadGraph",
+        "span": {
+          "Start": 45,
+          "End": 55
+        }
+      }
+    },
+    {
+      "id": "indexer/scanner.go#Scanner",
+      "type": "class",
+      "metadata": {
+        "file": "indexer/scanner.go",
+        "kind": "class",
+        "name": "Scanner",
+        "span": {
+          "Start": 28,
+          "End": 34
+        }
+      }
+    },
+    {
+      "id": "parser/parser.go#Symbol",
+      "type": "class",
+      "metadata": {
+        "file": "parser/parser.go",
+        "kind": "class",
+        "name": "Symbol",
+        "span": {
+          "Start": 34,
+          "End": 39
+        }
+      }
+    },
+    {
+      "id": "graph/scc_test.go#TestToDAG",
+      "type": "test",
+      "metadata": {
+        "file": "graph/scc_test.go",
+        "kind": "function",
+        "name": "TestToDAG",
+        "span": {
+          "Start": 59,
+          "End": 112
+        }
+      }
+    },
+    {
+      "id": "graph/visualize.go#ToDOT",
       "type": "function",
       "metadata": {
         "file": "graph/visualize.go",
         "kind": "function",
-        "name": "ToMermaid",
+        "name": "ToDOT",
         "span": {
-          "Start": 59,
-          "End": 120
+          "Start": 9,
+          "End": 56
         }
       }
     },
     {
-      "id": "indexer/scanner.go",
+      "id": "graph/graph.go#Edge",
+      "type": "class",
+      "metadata": {
+        "file": "graph/graph.go",
+        "kind": "class",
+        "name": "Edge",
+        "span": {
+          "Start": 43,
+          "End": 47
+        }
+      }
+    },
+    {
+      "id": "graph/graph.go#Graph",
+      "type": "class",
+      "metadata": {
+        "file": "graph/graph.go",
+        "kind": "class",
+        "name": "Graph",
+        "span": {
+          "Start": 56,
+          "End": 61
+        }
+      }
+    },
+    {
+      "id": "graph/graph.go#NewGraph",
+      "type": "function",
+      "metadata": {
+        "file": "graph/graph.go",
+        "kind": "function",
+        "name": "NewGraph",
+        "span": {
+          "Start": 64,
+          "End": 70
+        }
+      }
+    },
+    {
+      "id": "graph/graph.go#AddEdge",
+      "type": "method",
+      "metadata": {
+        "file": "graph/graph.go",
+        "kind": "method",
+        "name": "AddEdge",
+        "span": {
+          "Start": 80,
+          "End": 94
+        }
+      }
+    },
+    {
+      "id": "graph/graph.go#GetNeighbors",
+      "type": "method",
+      "metadata": {
+        "file": "graph/graph.go",
+        "kind": "method",
+        "name": "GetNeighbors",
+        "span": {
+          "Start": 117,
+          "End": 121
+        }
+      }
+    },
+    {
+      "id": "graph/scc.go",
       "type": "file",
       "metadata": {
         "imports": [
-          "dagonit/parser",
-          "os",
-          "path/filepath",
-          "strings"
+          "fmt",
+          "sort"
         ],
         "isTest": false,
         "language": "go"
+      }
+    },
+    {
+      "id": "parser/parser.go#SymbolKind",
+      "type": "type",
+      "metadata": {
+        "file": "parser/parser.go",
+        "kind": "type",
+        "name": "SymbolKind",
+        "span": {
+          "Start": 15,
+          "End": 15
+        }
+      }
+    },
+    {
+      "id": "parser/parser.go#Span",
+      "type": "class",
+      "metadata": {
+        "file": "parser/parser.go",
+        "kind": "class",
+        "name": "Span",
+        "span": {
+          "Start": 28,
+          "End": 31
+        }
       }
     },
     {
@@ -993,29 +980,37 @@
       }
     },
     {
-      "id": "retrieval/retrieval.go#expand",
-      "type": "method",
+      "id": "parser/python.go#PythonParser",
+      "type": "class",
+      "metadata": {
+        "file": "parser/python.go",
+        "kind": "class",
+        "name": "PythonParser",
+        "span": {
+          "Start": 8,
+          "End": 8
+        }
+      }
+    },
+    {
+      "id": "retrieval/retrieval.go#Engine",
+      "type": "class",
       "metadata": {
         "file": "retrieval/retrieval.go",
-        "kind": "method",
-        "name": "expand",
+        "kind": "class",
+        "name": "Engine",
         "span": {
-          "Start": 47,
-          "End": 70
+          "Start": 8,
+          "End": 10
         }
       }
     }
   ],
   "edges": [
     {
-      "from": "cmd/dagonit/main.go",
-      "to": "cmd/dagonit/main.go#loadGraph",
-      "type": "contains"
-    },
-    {
-      "from": "cmd/dagonit/main.go",
-      "to": "cmd/dagonit/main.go#main",
-      "type": "contains"
+      "from": "graph/scc.go#ToDAG",
+      "to": "graph/scc_test.go#TestToDAG",
+      "type": "tested_by"
     },
     {
       "from": "graph/scc.go",
@@ -1033,38 +1028,48 @@
       "type": "tested_by"
     },
     {
-      "from": "graph/scc_test.go",
-      "to": "graph/scc_test.go#TestComputeSCCs",
+      "from": "indexer/indexer.go",
+      "to": "indexer/indexer.go#Indexer",
       "type": "contains"
     },
     {
-      "from": "graph/scc_test.go",
-      "to": "graph/scc_test.go#TestToDAG",
+      "from": "indexer/indexer.go",
+      "to": "indexer/indexer.go#NewIndexer",
       "type": "contains"
     },
     {
-      "from": "graph/visualize.go",
-      "to": "graph/visualize.go#ToDOT",
+      "from": "indexer/indexer.go",
+      "to": "indexer/indexer.go#Index",
       "type": "contains"
     },
     {
-      "from": "graph/visualize.go",
-      "to": "graph/visualize.go#ToMermaid",
+      "from": "parser/parser.go",
+      "to": "parser/parser.go#Language",
       "type": "contains"
     },
     {
-      "from": "parser/tsjs.go",
-      "to": "parser/tsjs.go#TSJSParser",
+      "from": "parser/parser.go",
+      "to": "parser/parser.go#SymbolKind",
       "type": "contains"
     },
     {
-      "from": "parser/tsjs.go",
-      "to": "parser/tsjs.go#NewTSJSParser",
+      "from": "parser/parser.go",
+      "to": "parser/parser.go#Span",
       "type": "contains"
     },
     {
-      "from": "parser/tsjs.go",
-      "to": "parser/tsjs.go#Parse",
+      "from": "parser/parser.go",
+      "to": "parser/parser.go#Symbol",
+      "type": "contains"
+    },
+    {
+      "from": "parser/parser.go",
+      "to": "parser/parser.go#FileMetadata",
+      "type": "contains"
+    },
+    {
+      "from": "parser/parser.go",
+      "to": "parser/parser.go#Parser",
       "type": "contains"
     },
     {
@@ -1093,28 +1098,13 @@
       "type": "contains"
     },
     {
-      "from": "parser/go.go#GoParser",
-      "to": "parser/go_test.go#TestGoParser",
+      "from": "graph/scc.go#ComputeSCCs",
+      "to": "graph/scc_test.go#TestComputeSCCs",
       "type": "tested_by"
     },
     {
-      "from": "parser/go.go",
-      "to": "parser/go.go#GoParser",
-      "type": "contains"
-    },
-    {
-      "from": "parser/go.go",
-      "to": "parser/go.go#NewGoParser",
-      "type": "contains"
-    },
-    {
-      "from": "parser/go.go",
-      "to": "parser/go.go#Parse",
-      "type": "contains"
-    },
-    {
-      "from": "parser/go.go",
-      "to": "parser/go_test.go",
+      "from": "planner/planner.go#GeneratePlan",
+      "to": "planner/planner_test.go#TestGeneratePlan",
       "type": "tested_by"
     },
     {
@@ -1138,29 +1128,119 @@
       "type": "tested_by"
     },
     {
-      "from": "graph/scc.go#ComputeSCCs",
-      "to": "graph/scc_test.go#TestComputeSCCs",
-      "type": "tested_by"
-    },
-    {
-      "from": "indexer/indexer.go",
-      "to": "indexer/indexer.go#Indexer",
-      "type": "contains"
-    },
-    {
-      "from": "indexer/indexer.go",
-      "to": "indexer/indexer.go#NewIndexer",
-      "type": "contains"
-    },
-    {
-      "from": "indexer/indexer.go",
-      "to": "indexer/indexer.go#Index",
-      "type": "contains"
-    },
-    {
-      "from": "planner/planner.go#GeneratePlan",
+      "from": "planner/planner_test.go",
       "to": "planner/planner_test.go#TestGeneratePlan",
+      "type": "contains"
+    },
+    {
+      "from": "cmd/dagonit/main.go",
+      "to": "cmd/dagonit/main.go#loadGraph",
+      "type": "contains"
+    },
+    {
+      "from": "cmd/dagonit/main.go",
+      "to": "cmd/dagonit/main.go#main",
+      "type": "contains"
+    },
+    {
+      "from": "graph/scc_test.go",
+      "to": "graph/scc_test.go#TestComputeSCCs",
+      "type": "contains"
+    },
+    {
+      "from": "graph/scc_test.go",
+      "to": "graph/scc_test.go#TestToDAG",
+      "type": "contains"
+    },
+    {
+      "from": "graph/server.go",
+      "to": "graph/server.go#StartServer",
+      "type": "contains"
+    },
+    {
+      "from": "indexer/scanner.go",
+      "to": "indexer/scanner.go#FileType",
+      "type": "contains"
+    },
+    {
+      "from": "indexer/scanner.go",
+      "to": "indexer/scanner.go#FileInfo",
+      "type": "contains"
+    },
+    {
+      "from": "indexer/scanner.go",
+      "to": "indexer/scanner.go#Scanner",
+      "type": "contains"
+    },
+    {
+      "from": "indexer/scanner.go",
+      "to": "indexer/scanner.go#NewScanner",
+      "type": "contains"
+    },
+    {
+      "from": "indexer/scanner.go",
+      "to": "indexer/scanner.go#Scan",
+      "type": "contains"
+    },
+    {
+      "from": "indexer/scanner.go",
+      "to": "indexer/scanner_test.go",
       "type": "tested_by"
+    },
+    {
+      "from": "parser/go_test.go",
+      "to": "parser/go_test.go#TestGoParser",
+      "type": "contains"
+    },
+    {
+      "from": "parser/tsjs.go",
+      "to": "parser/tsjs.go#TSJSParser",
+      "type": "contains"
+    },
+    {
+      "from": "parser/tsjs.go",
+      "to": "parser/tsjs.go#NewTSJSParser",
+      "type": "contains"
+    },
+    {
+      "from": "parser/tsjs.go",
+      "to": "parser/tsjs.go#Parse",
+      "type": "contains"
+    },
+    {
+      "from": "parser/go.go#GoParser",
+      "to": "parser/go_test.go#TestGoParser",
+      "type": "tested_by"
+    },
+    {
+      "from": "graph/graph_test.go",
+      "to": "graph/graph_test.go#TestGraph",
+      "type": "contains"
+    },
+    {
+      "from": "graph/visualize.go",
+      "to": "graph/visualize.go#ToDOT",
+      "type": "contains"
+    },
+    {
+      "from": "graph/visualize.go",
+      "to": "graph/visualize.go#ToMermaid",
+      "type": "contains"
+    },
+    {
+      "from": "parser/python.go",
+      "to": "parser/python.go#PythonParser",
+      "type": "contains"
+    },
+    {
+      "from": "parser/python.go",
+      "to": "parser/python.go#NewPythonParser",
+      "type": "contains"
+    },
+    {
+      "from": "parser/python.go",
+      "to": "parser/python.go#Parse",
+      "type": "contains"
     },
     {
       "from": "graph/graph.go",
@@ -1243,113 +1323,33 @@
       "type": "tested_by"
     },
     {
-      "from": "graph/graph_test.go",
-      "to": "graph/graph_test.go#TestGraph",
-      "type": "contains"
-    },
-    {
-      "from": "graph/server.go",
-      "to": "graph/server.go#StartServer",
-      "type": "contains"
-    },
-    {
-      "from": "indexer/scanner.go",
-      "to": "indexer/scanner.go#FileType",
-      "type": "contains"
-    },
-    {
-      "from": "indexer/scanner.go",
-      "to": "indexer/scanner.go#FileInfo",
-      "type": "contains"
-    },
-    {
-      "from": "indexer/scanner.go",
-      "to": "indexer/scanner.go#Scanner",
-      "type": "contains"
-    },
-    {
-      "from": "indexer/scanner.go",
-      "to": "indexer/scanner.go#NewScanner",
-      "type": "contains"
-    },
-    {
-      "from": "indexer/scanner.go",
-      "to": "indexer/scanner.go#Scan",
-      "type": "contains"
-    },
-    {
-      "from": "indexer/scanner.go",
-      "to": "indexer/scanner_test.go",
-      "type": "tested_by"
-    },
-    {
       "from": "indexer/scanner_test.go",
       "to": "indexer/scanner_test.go#TestScanner_Scan",
       "type": "contains"
     },
     {
-      "from": "parser/go_test.go",
-      "to": "parser/go_test.go#TestGoParser",
+      "from": "parser/go.go",
+      "to": "parser/go.go#GoParser",
       "type": "contains"
     },
     {
-      "from": "parser/parser.go",
-      "to": "parser/parser.go#Language",
+      "from": "parser/go.go",
+      "to": "parser/go.go#NewGoParser",
       "type": "contains"
     },
     {
-      "from": "parser/parser.go",
-      "to": "parser/parser.go#SymbolKind",
+      "from": "parser/go.go",
+      "to": "parser/go.go#Parse",
       "type": "contains"
     },
     {
-      "from": "parser/parser.go",
-      "to": "parser/parser.go#Span",
-      "type": "contains"
-    },
-    {
-      "from": "parser/parser.go",
-      "to": "parser/parser.go#Symbol",
-      "type": "contains"
-    },
-    {
-      "from": "parser/parser.go",
-      "to": "parser/parser.go#FileMetadata",
-      "type": "contains"
-    },
-    {
-      "from": "parser/parser.go",
-      "to": "parser/parser.go#Parser",
-      "type": "contains"
-    },
-    {
-      "from": "parser/python.go",
-      "to": "parser/python.go#PythonParser",
-      "type": "contains"
-    },
-    {
-      "from": "parser/python.go",
-      "to": "parser/python.go#NewPythonParser",
-      "type": "contains"
-    },
-    {
-      "from": "parser/python.go",
-      "to": "parser/python.go#Parse",
-      "type": "contains"
-    },
-    {
-      "from": "planner/planner_test.go",
-      "to": "planner/planner_test.go#TestGeneratePlan",
-      "type": "contains"
+      "from": "parser/go.go",
+      "to": "parser/go_test.go",
+      "type": "tested_by"
     },
     {
       "from": "graph/graph.go#Graph",
       "to": "graph/graph_test.go#TestGraph",
-      "type": "tested_by"
-    },
-    {
-      "from": "graph/scc.go#ToDAG",
-      "to": "graph/scc_test.go#TestToDAG",
       "type": "tested_by"
     }
   ]
